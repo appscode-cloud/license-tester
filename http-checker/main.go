@@ -19,9 +19,10 @@ package main
 import (
 	"encoding/json"
 	"fmt"
+	"strings"
+
 	"go.bytebuilders.dev/license-verifier/apis/licenses/v1alpha1"
 	"gomodules.xyz/sets"
-	"strings"
 )
 
 const resp = `{
