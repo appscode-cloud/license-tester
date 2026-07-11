@@ -1,0 +1,24 @@
+version: "2"
+linters:
+  default: standard
+  enable:
+    - bodyclose
+    - goconst
+    - prealloc
+    - unparam
+  exclusions:
+    paths:
+      - generated.*\.go
+      - client
+      - vendor
+
+formatters:
+  enable:
+    - gofumpt
+    - goimports
+
+issues:
+  max-same-issues: 100
+
+run:
+  timeout: 10m
